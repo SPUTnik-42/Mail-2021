@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function compose_email() {
 
   // Show compose view and hide other views
-  document.querySelector('#emails-view').style.display = 'none';
+  document.querySelector('#emails-header').style.display = 'none';
   document.querySelector('#emails-table').style.display = 'none';
   document.querySelector("#emails-view").style.display = 'none' ;
   document.querySelector('#compose-view').style.display = 'block';
@@ -30,7 +30,7 @@ function compose_email() {
 function load_mailbox(mailbox) {
   
   // Show the mailbox and hide other views
-
+  document.querySelector('#emails-header').style.display = 'block';
   document.querySelector('#compose-view').style.display = 'none';
   document.querySelector('#emails-table').style.display = 'block';
   document.querySelector("#emails-view").style.display = 'none' ;
